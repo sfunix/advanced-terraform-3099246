@@ -53,6 +53,10 @@ variable "environment_list" {
   default = ["DEV","QA","STAGE","PROD"]
 }
 
+variable "instance_service_account" {
+  type = string
+}
+
 variable "environment_map" {
   type = map(string)
   default = {
