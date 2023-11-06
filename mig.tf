@@ -1,7 +1,7 @@
 module "vm_instance_template" {
   source  = "terraform-google-modules/vm/google//modules/instance_template"
   version = "7.9.0"
-  project_id = var.project_id
+  project_id = var.project-id
   machine_type = "e2-micro" 
   subnetwork = google_compute_subnetwork.subnet-1.name
 
