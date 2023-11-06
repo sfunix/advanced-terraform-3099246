@@ -4,8 +4,9 @@ module "vm_instance_template" {
   project_id = var.project_id
   machine_type = "e2-micro" 
   subnetwork = google_compute_subnetwork.subnet-1.name
-  service_account { 
-    email = var.instance_service_account
+
+  service_account {
+    email  = var.instance_service_account
     scopes = []
   }
 }
