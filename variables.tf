@@ -1,6 +1,7 @@
 ### VARIABLES
 variable "project-id" {
   type = string
+  default = "advanced-terraform-403922"
 }
 
 variable "org_id" {
@@ -51,6 +52,10 @@ variable "target_environment" {
 variable "environment_list" {
   type = list(string)
   default = ["DEV","QA","STAGE","PROD"]
+}
+
+variable "instance_service_account" {
+  type = string
 }
 
 variable "environment_map" {
