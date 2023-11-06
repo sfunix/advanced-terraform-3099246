@@ -1,6 +1,7 @@
 ### VARIABLES
 variable "project-id" {
   type = string
+  default = "advanced-terraform-403922"
 }
 
 variable "org_id" {
